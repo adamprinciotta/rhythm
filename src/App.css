@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.game-area {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.game-element {
+  width: 50px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.gameButtons {
+  display: flex;
+  width: 100%;
+  margin-top: 60vh;
+  justify-content: space-evenly;
+}
+
+.game-note {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.game-note{
+  z-index: 1000;
+  background-color: black;
+  animation: movingNote 1.5s linear;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+/* Animation that makes it so the notes move from the top to the bottom then fade out */
+@keyframes movingNote {
+  0%{
+    position: absolute;
+    top: 0vh;
+  }
+
+  90%{
+    top: 70vh;
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+
+/* Will likely fill these in later */
+.game-note.up {
+
+}
+
+.game-note.down {
+
+}
+
+.game-note.left {
+
+}
+
+.game-note.right {
+
+}
+
+.game-note.K {
+
+}
+
+.game-note.HS {
+
+}
+
+.game-note.P {
+
+}
+
+.game-note.S {
+
+}
+
+.game-note.Dust {
+
+}
+
+.game-note.Dash {
+
+}
+
+.game-note.FD {
+
+}
+
+.game-note.RC {
+
+}
+
+.game-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* CSS for one of the other variations */
+
+/* .rhythm-game {
+  position: relative;
+}
+
+.note-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.note {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 0 10px red;
+  transition: top 0.01s linear;
+}
+
+.score-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} */
